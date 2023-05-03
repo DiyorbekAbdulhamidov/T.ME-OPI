@@ -1,7 +1,9 @@
 export class BaseModel{
-    private id : number = 0;
+    constructor(public id: number){}
 
-    getId(){
+    // private id : number = 0;
+
+    getId(): number{
         return this.id;
     }
 
