@@ -1,7 +1,5 @@
 import { Message } from "../../model/messega";
 import { messages } from "./messageService";
-import { BaseModel } from "../../model/baseModel";
-
 
 export class MessageService {
     private id: number = 0;
@@ -70,7 +68,7 @@ export class MessageService {
       
     //     return userChats;
     //   }
-    
+
     chats(userId: number){
         let userChats : Set<number> = new Set<number>();
         
@@ -83,8 +81,5 @@ export class MessageService {
         }
         
         return userChats;
-      }
-      
-      
-    
+    }
 }
